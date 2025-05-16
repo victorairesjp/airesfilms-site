@@ -1,0 +1,195 @@
+<!-- Desenvolva um pequeno site HTML que simule uma página inicial de um sistema de pedidos online. A página deve conter:
+Um cabeçalho com o nome da empresa (crie um nome fictício).
+Uma lista de navegação com links para "Início", "Produtos" e "Contato".
+Uma seção principal com uma breve descrição da empresa.
+Uma lista de produtos fictícios com nome e preço.
+Um rodapé com informações de contato.
+Crie os arquivos contendo a estrutura necessária para exibir essas informações corretamente utilizando apenas HTML, para todas as páginas: "Início", "Produtos" e "Contato". -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aires Films - Produção Audiovisual</title>
+        <link rel="stylesheet" href="airesfilms.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <img src="assets/logos/LOGO-2-NUDE.png" alt="Aires Films Logo" class="logo">
+                <nav class="nav">
+                    <a href="#home">Início</a>
+                    <a href="#about">Quem Somos</a>
+                    <a href="#video-types">Nossos Filmes</a>
+                    <a href="#products">Pacotes</a>
+                    <a href="#contact">Contato</a>
+                </nav>
+            </div>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <img src="assets/fotos/DM-campo.png" alt="Duda e Matheus" class="hero-image">
+            </div>
+            <div class="container">
+                <h1>Capturando Momentos Inesquecíveis</h1>
+                <p>Transformando suas memórias em histórias cinematográficas</p>
+                <a href="#products" class="cta-button">Ver Nossos Pacotes</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Quem somos?</h2>
+                <div class="about-content">
+                    <p>A Aires Films é uma empresa de produção audiovisual focada em filmes de casamento. Temos como principal objetivo reviver experiências, sentimentos e memórias marcantes de algo importante que aconteceu em sua vida e deixar registrado para sempre tudo que foi vivenciado.</p>
+                    <p>Através dos nossos filmes, você será capaz de relembrar tudo que viveu, você também terá a oportunidade de compartilhar tudo isso com outras pessoas queridas e além de tudo isso, você possuirá algo único, verdadeiro e marcante para sempre.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="video-types" class="video-types">
+            <div class="container">
+                <h2>Nossos Filmes</h2>
+                <p class="section-desc">Cada momento do seu casamento merece ser contado de uma forma única e especial.</p>
+                
+                <div class="video-grid">
+                    <div class="video-type">
+                        <div class="content-wrapper">
+                            <div class="text-content">
+                                <h3>Pré-Wedding</h3>
+                                <p>Um filme artístico que conta sua história de amor. Gravado antes do casamento em locações especiais, este vídeo de 3-5 minutos combina cenas naturais do casal com momentos cinematográficos, criando um filme único e romântico.</p>
+                            </div>
+                            <div class="video-container">
+                                <img src="assets/fotos/Manel-Thais-olhar.png" alt="Detalhe do anel" class="video-preview">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-type">
+                        <div class="content-wrapper">
+                            <div class="text-content">
+                                <h3>Filme Highlights</h3>
+                                <p>Um filme curto e dinâmico que captura a essência do seu dia. Perfeito para compartilhar nas redes sociais, este vídeo de 3-5 minutos apresenta os momentos mais marcantes do seu casamento com uma edição ritmada e emocionante.</p>
+                            </div>
+                            <div class="video-container">
+                                <img src="assets/fotos/rodopiando.png" alt="Momento do beijo" class="video-preview">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-type">
+                        <div class="content-wrapper">
+                            <div class="text-content">
+                                <h3>Filme do Casal</h3>
+                                <p>Uma história mais completa do seu dia especial. Com duração de 10-15 minutos, este filme apresenta uma narrativa envolvente que inclui a preparação, cerimônia e festa, combinando momentos espontâneos com cenas cinematográficas.</p>
+                            </div>
+                            <div class="video-container">
+                                <img src="assets/fotos/casal-sem-rosto.png" alt="Casal rodopiando" class="video-preview">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Nossos Pacotes</h2>
+                <p class="section-desc">Atualmente trabalhamos com alguns pacotes para que a gente possa te entregar especificamente o que você deseja.</p>
+                
+                <div class="packages">
+                    <div class="package-card">
+                        <h3>Pacote Básico</h3>
+                        <div class="price">R$ 3.000,00</div>
+                        <ul>
+                            <li>Making of da noiva e do noivo</li>
+                            <li>1 Filme highlights do evento (até 3 minutos)</li>
+                            <li>1 Reels para rede socias (até 1 minuto)</li>
+                        </ul>
+                        <a href="#contact" class="package-button">Solicitar Orçamento</a>
+                    </div>
+
+                    <div class="package-card featured">
+                        <h3>Pacote Premium</h3>
+                        <div class="price">R$ 4.500,00</div>
+                        <ul>
+                            <li>Ensaio de Pré-Wedding</li>
+                            <li>1 Filme do Pré Wedding (até 3 minutos)</li>
+                            <li>Making of da noiva e do noivo</li>
+                            <li>1 Filme highlights do evento (até 5 minutos)</li>
+                            <li>1 Reels para rede socias (até 1 minuto)</li>
+                        </ul>
+                        <a href="#contact" class="package-button">Solicitar Orçamento</a>
+                    </div>
+
+                    <div class="package-card">
+                        <h3>Pacote Xperience</h3>
+                        <div class="price">R$ 6.000,00</div>
+                        <ul>
+                            <li>Ensaio de Pré-Wedding</li>
+                            <li>1 Filme do Pré Wedding (até 3 minutos)</li>
+                            <li>Making of da noiva e do noivo</li>
+                            <li>1 Filme completo do evento (até 15 minutos)</li>
+                            <li>1 Filme highlights do evento (até 5 minutos)</li>
+                            <li>1 Reels para rede socias (até 1 minuto)</li>
+                            <li>Drone incluso</li>
+                        </ul>
+                        <a href="#contact" class="package-button">Solicitar Orçamento</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>(83) 9 8872-9205</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </div>
+                        <h3>Instagram</h3>
+                        <p>@victorairesfilms</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <h3>E-mail</h3>
+                        <p>contato@airesfilms.com.br</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <img src="assets/logos/LOGO-2-NUDE.png" alt="Aires Films Logo" class="footer-logo">
+                <p>&copy; 2024 Aires Films. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </body>
+</html>
