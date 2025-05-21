@@ -735,10 +735,6 @@ section h2::after {
         gap: 2rem;
     }
 
-    .video-type.reverse .content-wrapper {
-        direction: ltr;
-    }
-
     .text-content {
         padding: 1rem 0;
     }
